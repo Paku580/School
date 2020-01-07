@@ -10,7 +10,7 @@ public class SelectionSort extends SortingAlgorithm {
   }
 
   @Override
-  void sort() {
+  public void sort() {
     for (int i = 0; i < sortingData.size() - 1; i++) {
       int minIndex = i;
       for (int j = i + 1; j < sortingData.size(); j++) {

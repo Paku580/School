@@ -10,7 +10,7 @@ public class InsertionSort extends SortingAlgorithm {
   }
 
   @Override
-  void sort() {
+  public void sort() {
     for (int i = 1; i < sortingData.size(); i++) {
       int j = i;
       while (j > 0 && sortingData.get(j) < sortingData.get(j - 1)) {

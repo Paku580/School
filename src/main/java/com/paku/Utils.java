@@ -7,6 +7,6 @@ import java.util.stream.Collectors;
 public class Utils {
 
   public static List<Integer> generateRandomNumbers(long size) {
-    return ThreadLocalRandom.current().ints(size, 0, 101).boxed().collect(Collectors.toList());
+    return ThreadLocalRandom.current().ints(size).boxed().collect(Collectors.toList());
   }
 }

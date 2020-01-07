@@ -9,7 +9,7 @@ public class QuickSort extends SortingAlgorithm {
   }
 
   @Override
-  void sort() {
+  public void sort() {
 
   }
 }

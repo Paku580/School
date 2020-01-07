@@ -9,7 +9,7 @@ public class MergeSort extends SortingAlgorithm {
   }
 
   @Override
-  void sort() {
+  public void sort() {
 
   }
 }
