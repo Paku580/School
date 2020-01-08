@@ -2,6 +2,7 @@ import com.google.common.collect.Ordering;
 import com.paku.Utils;
 import com.paku.sortingalgorithms.BubbleSort;
 import com.paku.sortingalgorithms.InsertionSort;
+import com.paku.sortingalgorithms.QuickSort;
 import com.paku.sortingalgorithms.SelectionSort;
 import org.junit.jupiter.api.Test;
 
@@ -29,6 +30,13 @@ public class SortingAlgorithmTests {
   public void selectionSort() {
     List<Integer> numbers = Utils.generateRandomNumbers(1000);
     new SelectionSort(numbers).sort();
+    assertTrue(Ordering.natural().isOrdered(numbers), "List must be sorted");
+  }
+
+  @Test
+  public void quickSort() {
+    List<Integer> numbers = Utils.generateRandomNumbers(1000);
+    new QuickSort(numbers).sort();
     assertTrue(Ordering.natural().isOrdered(numbers), "List must be sorted");
   }
 }

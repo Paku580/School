@@ -10,5 +10,5 @@ public abstract class SortingAlgorithm {
     this.sortingData = sortingData;
   }
 
-  abstract void sort();
+  public abstract void sort();
 }

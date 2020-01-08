@@ -2,20 +2,18 @@ package com.paku.sortingalgorithms;
 
 import com.paku.Utils;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Application {
   public static void main(String[] args) {
-    List<Integer> numbers = Utils.generateRandomNumbers(30);
+    List<Integer> numbers = Utils.generateRandomNumbers(10, 0, 21);
     System.out.println("""
             Please select a sorting algorithm:
             1: Bubble sort
             2: Insertion sort
             3: Selection sort
-            4: Quick sort
-            5: Merge sort""");
+            4: Quick sort""");
 
     Scanner scanner = new Scanner(System.in);
 
@@ -24,7 +22,6 @@ public class Application {
       case INSERTIONSORT -> new InsertionSort(numbers).sort();
       case SELECTIONSORT -> new SelectionSort(numbers).sort();
       case QUICKSORT -> new QuickSort(numbers).sort();
-      case MERGESORT -> new MergeSort(numbers).sort();
     }
     System.out.println(numbers);
   }
